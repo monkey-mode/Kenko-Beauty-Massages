@@ -19,12 +19,12 @@ export default function RootLayout({
   return (
     <html lang="en" className="bg-landing bg-fixed bg-cover relative ">
       <body className={IBMplexSans.className}>
-        <div className="absolute inset-0 bg-black opacity-50"></div>
         <NextUIProvider>
           <NextThemesProvider attribute="class" defaultTheme="light">
+            <ChatNavBar />
             <div className="h-screen max-h-screen w-screen flex flex-col relative">
-              <ChatNavBar />
-              <div className="h-full">{children}</div>
+              <div className="absolute h-screen inset-0 bg-black opacity-50 z-10"></div>
+              <div className="min-h-screen z-20">{children}</div>
             </div>
           </NextThemesProvider>
         </NextUIProvider>

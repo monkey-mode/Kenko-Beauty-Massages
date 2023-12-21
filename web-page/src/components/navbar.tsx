@@ -19,7 +19,7 @@ export default function ChatNavBar() {
 
   if (!mounted) return null;
   return (
-    <Navbar className="shadow-md bg-[#5C7042]">
+    <Navbar className="shadow-md bg-[#5C7042] fixed">
       <NavbarBrand>
         <Logo
           fill={"#ffffff"}
